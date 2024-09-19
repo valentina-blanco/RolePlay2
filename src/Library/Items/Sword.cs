@@ -1,6 +1,8 @@
+using Roleplaygame;
+
 namespace Ucu.Poo.RoleplayGame;
 
-public class Sword
+public class Sword : IElemento
 {
     public int AttackValue 
     {
@@ -9,4 +11,12 @@ public class Sword
             return 20;
         } 
     }
+    public int DefenseValue
+    {
+        get
+        {
+            return 0;
+        }
+    }
 }
+

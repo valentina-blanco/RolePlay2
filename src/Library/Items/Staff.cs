@@ -1,6 +1,7 @@
+using Roleplaygame;
 namespace Ucu.Poo.RoleplayGame;
 
-public class Staff
+public class Staff : IElemento
 {
     public int AttackValue 
     {

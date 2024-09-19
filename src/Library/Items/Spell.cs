@@ -1,6 +1,8 @@
+using Roleplaygame;
+
 namespace Ucu.Poo.RoleplayGame;
 
-public class Spell
+public class Spell : IElemento
 {
     public int AttackValue
     {
