@@ -27,10 +27,5 @@ public class ArcherAtacadoTest
         int healthEsperada = 100 - (dwarf.AttackValue - archer.DefenseValue);
         Assert.That(archer.Health, Is.EqualTo(healthEsperada));
     }
-
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
-    }
+    
 }
