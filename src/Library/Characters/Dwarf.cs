@@ -52,6 +52,7 @@ public class Dwarf : ICharacters
             this.Health -= power - this.DefenseValue;
         }
     }
+    
 
     public void Cure()
     {
