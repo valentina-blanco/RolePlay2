@@ -25,10 +25,12 @@ public class WizardTest
             Bow = new Bow(),
             Helmet = new Helmet()
         };
-
         int health = archer.Health;
         archer.ReceiveAttack(wizard.AttackValue);
-
-        Assert.That(archer.Health, Is.EqualTo(health - wizard.AttackValue));
+        
+        int expectedHealth = health - (wizard.AttackValue - archer.DefenseValue);
+        expectedHealth = expectedHealth < 0 ? 0 : expectedHealth;
+        
+        Assert.That(archer.Health, Is.EqualTo(expectedHealth));
     }
 }
